@@ -1,0 +1,32 @@
+
+MetaGraphDef with tag-set: 'serve' contains the following SignatureDefs:
+
+signature_def['__saved_model_init_op']:
+  The given SavedModel SignatureDef contains the following input(s):
+  The given SavedModel SignatureDef contains the following output(s):
+    outputs['__saved_model_init_op'] tensor_info:
+        dtype: DT_INVALID
+        shape: unknown_rank
+        name: NoOp
+  Method name is: 
+
+signature_def['serving_default']:
+  The given SavedModel SignatureDef contains the following input(s):
+    inputs['pos_x'] tensor_info:
+        dtype: DT_FLOAT
+        shape: (-1, 1)
+        name: serving_default_pos_x:0
+    inputs['pos_y'] tensor_info:
+        dtype: DT_FLOAT
+        shape: (-1, 1)
+        name: serving_default_pos_y:0
+    inputs['pos_z'] tensor_info:
+        dtype: DT_FLOAT
+        shape: (-1, 1)
+        name: serving_default_pos_z:0
+  The given SavedModel SignatureDef contains the following output(s):
+    outputs['vis_full'] tensor_info:
+        dtype: DT_FLOAT
+        shape: (-1, 480)
+        name: StatefulPartitionedCall:0
+  Method name is: tensorflow/serving/predict
